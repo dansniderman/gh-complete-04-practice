@@ -1,5 +1,4 @@
-name: Lint, Test, and Deploy
-
+name: Issues
 on: 
   issues:
     types: [opened, edited, closed]
