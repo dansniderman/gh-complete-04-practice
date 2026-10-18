@@ -1,0 +1,13 @@
+name: Lint, Test, and Deploy
+
+on: 
+  issues:
+    types: [opened, edited, closed]
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+          - name: Output Github Context
+            run: echo "${{ toJson(github) }}"
